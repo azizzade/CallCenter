@@ -28,9 +28,14 @@
     background-color: yellow;
     height: 100vh;
     width: 6%;
+
+}
+
+.admin_menu_content {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 .admin_win {
@@ -46,6 +51,41 @@
 }
 
 .admin_picture img {
-    max-width: 80px;
+    max-width: 80%;
     border-radius: 50%;
 }
+
+.admin_menu_list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.admin_menu_list_style {
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* .list{
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.statistic {
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+ */
