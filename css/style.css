@@ -20,24 +20,32 @@
     margin-right: 50px;
 }
 
-.admin_content {
+.admin_content_list {
     display: flex;
 }
 
-.profil {
+.admin_menu {
     background-color: yellow;
-    height: 200px;
-    width: 33.3%;
+    height: 100vh;
+    width: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.profil_content {
+.admin_win {
     background-color: red;
-    height: 200px;
-    width: 33.3%;
+    height: 100vh;
+    width: 60%;
 }
 
 .operator_list {
     background-color: green;
-    height: 200px;
-    width: 33.3%;
+    height: 100vh;
+    width: 34%;
+}
+
+.admin_picture img {
+    max-width: 80px;
+    border-radius: 50%;
 }
