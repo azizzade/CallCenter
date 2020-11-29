@@ -1,5 +1,4 @@
 let today = new Date();
-
 let day = today.getDate();
 let month = today.getMonth() + 1;
 let year = today.getFullYear();
@@ -14,3 +13,11 @@ if (month < 10) {
 let out = document.getElementById("output");
 
 out.innerHTML = day + "/" + month + "/" + year;
+
+
+// let list = document.querySelector("a div");
+
+// list.addEventListener("click", function(){
+//     list.classList.toggle(".active");
+// })
+
