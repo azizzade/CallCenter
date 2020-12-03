@@ -55,62 +55,100 @@
                 </div>
             </div>
             <div class="admin_win">
-                <div class="search_date">
-                    <ul>
-                        <li>
-                            <div class="serch">
-                                <select name="serch_filter" id="search_filter">
-                                    <option value="Ad Soyad">Ad Soyad</option>
-                                    <option value="Nömrə">Nömrə</option>
-                                </select>
-                                <input type="search" id="search_style">
-                        </li>
-                        <li>
+                <div class="search_calendar">
+                    <div class="search_calendar_content">
+                        <div class="search_style">
+                            <input type="search" placeholder="Axtarış...">
+                        </div>
+                        <div class="calendar">
                             <div class="calendar_icon">
-                                <a href="">
-                                    <img src="/assert/picture/icons/calendar.svg" alt="">
-                                </a>
+                                <img src="/assert/picture/icons/calendar.svg" alt="">
                             </div>
-                        </li>
-                    </ul>
+                            <div class="calendar_code">
+                                <div class="wrapper">
+
+                                    <div class="container-calendar">
+                                        <h3 id="monthAndYear"></h3>
+                                        
+                                        <div class="button-container-calendar">
+                                            <button id="previous" onclick="previous()">&#8249;</button>
+                                            <button id="next" onclick="next()">&#8250;</button>
+                                        </div>
+                                        
+                                        <table class="table-calendar" id="calendar" data-lang="en">
+                                            <thead id="thead-month"></thead>
+                                            <tbody id="calendar-body"></tbody>
+                                        </table>
+                                        
+                                        <div class="footer-container-calendar">
+                                             <label for="month">Jump To: </label>
+                                             <select id="month" onchange="jump()">
+                                                 <option value=0>Jan</option>
+                                                 <option value=1>Feb</option>
+                                                 <option value=2>Mar</option>
+                                                 <option value=3>Apr</option>
+                                                 <option value=4>May</option>
+                                                 <option value=5>Jun</option>
+                                                 <option value=6>Jul</option>
+                                                 <option value=7>Aug</option>
+                                                 <option value=8>Sep</option>
+                                                 <option value=9>Oct</option>
+                                                 <option value=10>Nov</option>
+                                                 <option value=11>Dec</option>
+                                             </select>
+                                             <select id="year" onchange="jump()"></select>       
+                                        </div>
+                                
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
-                <div class="date_calendar">
-                    <div class="wrapper">
-                        <div class="container-calendar">
-                            <h3 id="monthAndYear"></h3>
-                            <div class="button-container-calendar">
-                                <button id="previous" onclick="previous()">&#8249;</button>
-                                <button id="next" onclick="next()">&#8250;</button>
-                            </div>
-                            <table class="table-calendar" id="calendar" data-lang="en">
-                                <thead id="thead-month"></thead>
-                                <tbody id="calendar-body"></tbody>
+                <div class="cals_tab">
+                    <div class="cals_tab_list_title">
+                        <table>
+                            <tr id="th_style">
+                                <th>Operatorun adı</th>
+                                <th>Nömrə</th>
+                                <th>Müddət</th>
+                                <th>Səs yazısı</th>
+                            </tr>
+                        </table>   
+                    </div>
+                    <div class="cals_tab_list">
+                        <div class="cals_tab_list_a">
+                            <table>
+                                <tr id="th_style">
+                                    <th>Azizzade Aziz</th>
+                                    <th>+994 503997737</th>
+                                    <th>03:52</th>
+                                    <th>
+                                        <img id="play_icon" src="/assert/picture/icons/play.png" alt="">
+                                    </th>
+                                </tr>
                             </table>
-                            <div class="footer-container-calendar">
-                                <label for="month">Tarix: </label>
-                                <select id="month" onchange="jump()">
-                                    <option value=0>Jan</option>
-                                    <option value=1>Feb</option>
-                                    <option value=2>Mar</option>
-                                    <option value=3>Apr</option>
-                                    <option value=4>May</option>
-                                    <option value=5>Jun</option>
-                                    <option value=6>Jul</option>
-                                    <option value=7>Aug</option>
-                                    <option value=8>Sep</option>
-                                    <option value=9>Oct</option>
-                                    <option value=10>Nov</option>
-                                    <option value=11>Dec</option>
-                                </select>
-                                <select id="year" onchange="jump()"></select>
+                        </div>
+                        <audio controls></audio>
+                    </div>    
+                </div>
+            </div>
+            <div class="operator_list">
+                <div class="operator_emmaStone_content">
+                    <div class="operator_picture">
+                        <div class="operator_circle_out">
+                            <div class="operator_circle_center">
+                                <img src="/assert/picture/Admin/support_conversation_information_avatar_operator_woman_person-512.png" alt="">
                             </div>
                         </div>
                     </div>
+                    <div class="operator_inf">
+                        <p id="op_name">Emma Stone</p>
+                        <p id="op_position">Operator</p>
+                    </div>
                 </div>
             </div>
-            <div class="cals_tab"></div>
-        </div>
-        <div class="operator_list"></div>
         </div>
     </main>
 

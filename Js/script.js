@@ -15,6 +15,8 @@ let out = document.getElementById("output");
 out.innerHTML = day + "/" + month + "/" + year;
 
 
+/*calendar*/
+
 function generate_year_range(start, end) {
   var years = "";
   for (var year = start; year <= end; year++) {
@@ -31,7 +33,9 @@ selectMonth = document.getElementById("month");
 
 
 createYear = generate_year_range(1970, 2050);
-
+/** or
+* createYear = generate_year_range( 1970, currentYear );
+*/
 
 document.getElementById("year").innerHTML = createYear;
 
@@ -151,8 +155,13 @@ function daysInMonth(iMonth, iYear) {
 }
 
 let calendar_icon = document.querySelector(".calendar_icon");
-let date_calendar =document.querySelector(".date_calendar");
+let calendar_code = document.querySelector(".calendar_code");
 
-calendar_icon.addEventListener('click', function(){
-  date_calendar.style.display = "block";
-})
+calendar_icon.addEventListener("click", function(){
+  calendar_code.style.display = "block";
+}) 
+
+
+let play_icon = document.querySelector(".play_icon");
+
+
