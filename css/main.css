@@ -41,16 +41,12 @@
 
 }
 
-
 .admin_menu_content {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     text-align: center;
-
 }
-
-
 
 .admin_picture img {
     max-width: 80%;
@@ -295,12 +291,13 @@
     cursor: pointer;
 }
 
-.cals_tab_list audio {
+.audio_style {
     margin-top: 10px;
     width: 100%;
     border-radius: 27px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.16);
     height: 25px;
+    display: none;
 }
 
 .operator_list {
@@ -322,7 +319,7 @@
 }
 
 .operator_circle_out {
-    width:130px ;
+    width: 130px;
     height: 130px;
     border: solid 4px rgba(255, 255, 0, 0.5);
     border-radius: 50%;
@@ -348,7 +345,7 @@
 }
 
 .operator_inf {
-    margin-left:40px;
+    margin-left: 40px;
     align-items: center;
 }
 
@@ -358,6 +355,6 @@
 
 .operator_inf #op_position {
     margin-top: 5px;
-    font-family:HelveticaLight ;
+    font-family: HelveticaLight;
     opacity: 0.5;
 }

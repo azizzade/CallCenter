@@ -162,6 +162,11 @@ calendar_icon.addEventListener("click", function(){
 }) 
 
 
-let play_icon = document.querySelector(".play_icon");
+let play_icon = document.querySelector("#play_icon");
+let audio_style = document.querySelector(".audio_style");
+
+play_icon.addEventListener("click", function(){
+  audio_style.style.display = "block";
+})
 
 
