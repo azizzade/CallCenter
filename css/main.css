@@ -100,7 +100,6 @@
 }
 
 .search_calendar_content {
-    display: flex;
     align-items: center;
     position: absolute;
     top: 100px;
@@ -114,7 +113,11 @@
     font-family: HelveticaLightThin;
 }
 
-.calendar img {
+.search_style {
+    display: flex;
+}
+
+.calendar_icon img {
     width: 50px;
     cursor: pointer;
 }

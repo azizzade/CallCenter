@@ -158,7 +158,11 @@ let calendar_icon = document.querySelector(".calendar_icon");
 let calendar_code = document.querySelector(".calendar_code");
 
 calendar_icon.addEventListener("click", function(){
-  calendar_code.style.display = "block";
+  if (calendar_code.style.display === "none") {
+    calendar_code.style.display = "block";
+  } else {
+    calendar_code.style.display = "none";
+  }
 }) 
 
 
@@ -166,7 +170,9 @@ let play_icon = document.querySelector("#play_icon");
 let audio_style = document.querySelector(".audio_style");
 
 play_icon.addEventListener("click", function(){
-  audio_style.style.display = "block";
-})
-
-
+  if (audio_style.style.display === "none") {
+    audio_style.style.display = "block";
+  } else {
+    audio_style.style.display = "none";
+  }
+}) 
