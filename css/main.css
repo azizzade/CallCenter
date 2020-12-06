@@ -124,6 +124,12 @@
 
 /* calendar */
 
+.calendar {
+    position: absolute;
+    right: 40px;
+    z-index: 4;
+}
+
 .calendar_code {
     display: none;
 }
@@ -286,7 +292,6 @@
     transition: all 1s;
     color: white;
     height: 60px;
-    z-index: 2;
 }
 
 #th_style img {

@@ -1,20 +1,3 @@
-let today = new Date();
-let day = today.getDate();
-let month = today.getMonth() + 1;
-let year = today.getFullYear();
-
-if (day < 10) {
-  day = '0' + day
-}
-if (month < 10) {
-  month = '0' + month
-}
-
-let out = document.getElementById("output");
-
-out.innerHTML = day + "/" + month + "/" + year;
-
-
 /*calendar*/
 
 function generate_year_range(start, end) {
@@ -45,7 +28,7 @@ var lang = calendar.getAttribute('data-lang');
 var months = "";
 var days = "";
 
-var monthDefault = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var monthDefault = ["Yanvar", "Fevral", "Mart", "Aprel", "May", "İyun", "İyul", "Avqust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"];
 
 var dayDefault = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -53,7 +36,7 @@ if (lang == "en") {
   months = monthDefault;
   days = dayDefault;
 } else if (lang == "id") {
-  months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+  months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Dekabr"];
   days = ["Ming", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"];
 } else if (lang == "fr") {
   months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
