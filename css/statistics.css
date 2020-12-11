@@ -103,12 +103,11 @@
 }
 
 .statistic_chart {
-    display: flex;
     justify-content: center;
     margin-top: 50px;
     height: auto;
+    width: 100%;
 }
-
 
 
 .statistic_title button {
@@ -189,3 +188,7 @@ a:active {
     font-family: HelveticaLight;
     opacity: 0.5;
 }
+
+/* #chart_line {
+    display: none;
+} */
