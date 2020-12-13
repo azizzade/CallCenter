@@ -2,7 +2,6 @@ let diogram = document.getElementById("diogram");
 
 let myDiogram = echarts.init(diogram);
 
-
 let option = {
     
     tooltip: {

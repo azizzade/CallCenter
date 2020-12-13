@@ -1,4 +1,3 @@
-
 let chart_line = document.getElementById("chart_line");
 
 let myChart = echarts.init(chart_line);
@@ -19,6 +18,5 @@ let option = {
 };
 
 myChart.setOption(option);
-
 
 

@@ -102,6 +102,10 @@
     font-family: HelveticaLight;
 }
 
+.stat_title {
+    margin-right: 60px;
+}
+
 .statistic_chart {
     justify-content: center;
     margin-top: 50px;
@@ -189,10 +193,15 @@ a:active {
     opacity: 0.5;
 }
 
-#chart_line {
+/* #chart_line {
+    display: none;
+} */
+
+#diogram {
     display: none;
 }
 
 .active {
-      
+   display: block;   
+   transition: all 2s;
 }
