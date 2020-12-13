@@ -4,12 +4,13 @@
 }
 
 @font-face {
-    font-family: Helvetica;
-    src: url(/assert/font/HelveticaNeue-Medium.otf);
+    src: url(/assert/font/HelveticaNeue-Light.otf);
+    font-family: HelveticaLight;
 }
 
 .login_background {
     display: flex;
+    position: relative;
 }
 
 .login_background #background_img {
@@ -21,11 +22,10 @@
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100vh;
-    position: absolute;
-    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 
 .login_content {
@@ -33,19 +33,30 @@
     flex-direction: column;
     align-items: center;
     height: auto;
-    opacity: 1;
-
+    padding: 30px 40px;
+    z-index:2 ;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
 }
+
+.login_content_backgorund {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* filter: blur(8px); */
+    /* background: hsla(0,0%,100%,.3); */
+    /* -webkit-filter: blur(20px); */
+	/* transform: scale(1.1);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; */
+    width: 400px;
+    height: 460px;
+}
+
 #logo_img {
     width: 100px;
     height: 100px;
     margin-bottom: 100px;
-}
-
-.login_content {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
 }
 
 .sign_content {
@@ -53,7 +64,17 @@
     flex-direction: column;
 }
 
-#username {
+.sign_content input {
+    border-radius: 22px;
+    border: solid 1px rgba(0, 0, 0, 0.5);
+    padding: 10px 10px 10px 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    font-family: HelveticaLight;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* #username {
     border-radius: 22px;
     border: solid 1px rgba(0, 0, 0, 0.5);
     padding:10px 10px 10px 15px;
@@ -67,11 +88,14 @@
     padding:10px 10px 10px 15px;
     margin-bottom: 20px;
     box-shadow:0px 0px 20px rgba(0, 0, 0, 0.4);
-}
+} */
 
-#sign_in {
-    background-color:#06A108;
+#sign_in_button {
+    background-color: #06A108;
     border-radius: 22px;
     border: none;
     padding: 10px;
+    color: white;
+    font-family: Helvetica;
+    cursor: pointer;
 }
