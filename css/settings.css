@@ -92,25 +92,6 @@
     flex-direction: column;
 }
 
-.settings_title {
-    display: flex;
-    height: 200px;
-    align-items: center;
-    justify-content: space-evenly;
-    font-family: HelveticaLight;
-}
-
-.settings_title button {
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.6);
-    height: 40px;
-    width: 300px;
-    cursor: pointer;
-    border: none;
-    font-size: 14pt;
-}
-
 a,
 a:link,
 a:visited,
@@ -120,13 +101,12 @@ a:active {
     color: black;
 }
 
-
-
 .settings_content {
     display: flex;
     width: 100%;
     height: auto;
     justify-content: space-around;
+    margin-top: 120px;
 }
 
 .profil_picture {
