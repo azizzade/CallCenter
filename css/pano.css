@@ -82,11 +82,95 @@
     max-width: 60px;
 }
 
-.operator_pano {
+.operator {
     height: 100vh;
     width: 66%;
     display: flex;
     flex-direction: column;
+}
+
+.share_but {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.share_but i {
+    font-size: 14pt;
+    color: cadetblue;
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+
+}
+
+.operator_status ul {
+    display: flex;
+}
+
+.emma_stone .operator_img img {
+    max-width: 100px;
+    border: solid 2px yellow;
+    border-radius: 50%;
+}
+
+.emma_stone .operator_status_circle_out {
+    width: 130px;
+    height: 130px;
+    border: solid 4px rgba(255, 255, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emma_stone .operator_status_circle_center {
+    width: 115px;
+    height: 115px;
+    border: solid 3px rgba(255, 255, 0, 0.75);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.operator_status_info {
+    flex-direction: column;
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.operator_status_info #op_name {
+    margin-top: 30px;
+}
+
+.lucy_stone .operator_img img {
+    max-width: 100px;
+    border: solid 2px #00C8CF;
+    border-radius: 50%;
+}
+
+.lucy_stone .operator_status_circle_out {
+    width: 130px;
+    height: 130px;
+    border: solid 4px #8EE2E6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lucy_stone .operator_status_circle_center {
+    width: 115px;
+    height: 115px;
+    border: solid 3px #5CD8DD;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .operator_list {
@@ -138,7 +222,7 @@
     align-items: center;
 }
 
-.operator_inf #op_name {
+#op_name {
     font-family: Helvetica;
 }
 

@@ -159,3 +159,38 @@ play_icon.addEventListener("click", function(){
     audio_style.style.display = "none";
   }
 }) 
+
+
+
+let new_operator_btn = document.querySelector(".new_button");
+let close_btn = document.querySelector(".close_button");
+let modal = document.querySelector(".modal");
+
+
+new_operator_btn.addEventListener("click", function() {
+    modal.style.display = "block";
+});
+
+close_btn.addEventListener("click", function() {
+    modal.style.display = 'none';
+});
+
+window.addEventListener("click", function() {
+    if(event.target == modal){
+        modal.style.display = 'none';
+    }
+})
+
+
+let operator_edit_button = document.querySelector(".operator_edit_button");
+let edit_delete_btn = document.querySelector(".edit_delete_btn");
+
+operator_edit_button.addEventListener('click', function() {
+  if (edit_delete_btn.style.display === "none"){
+    edit_delete_btn.style.display = "block";
+    edit_delete_btn.style.display = "flex";
+  }else {
+    edit_delete_btn.style.display = "none";
+  }
+  
+})
