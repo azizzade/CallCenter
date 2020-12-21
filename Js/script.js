@@ -188,25 +188,25 @@ let edit_delete_btn = document.querySelectorAll(".edit_delete_btn");
 operator_edit_button.addEventListener('click', function() {
 
   for (let index = 0; index < edit_delete_btn.length; index++) {
-    edit_delete_btn[index];
-    console.log(edit_delete_btn);
-  }
-  if (edit_delete_btn.style.display === "none"){
-    edit_delete_btn.style.display = "block";
-    edit_delete_btn.style.display = "flex";
+   let element = edit_delete_btn[index];
+   if (element.style.display == "none"){
+    element.style.display = "block";
+    element.style.display = "flex";
   }else {
-    edit_delete_btn.style.display = "none";
+    element.style.display = "none";
   }
-  
+  }
 })
 
-let delete_btn = document.querySelector(".delete_btn");
+let delete_btn = document.querySelectorAll(".delete_btn");
 let modal_delete = document.querySelector(".modal_delete");
 let chanel_btn =document.getElementById("chanel_btn");
 
-delete_btn.addEventListener('click', function(){
-  modal_delete.style.display = "block";
-})
+for (let index = 0; index < delete_btn.length; index++) {
+  delete_btn[index].addEventListener('click', function(){
+    modal_delete.style.display = "block";
+  })
+}
 
 chanel_btn.addEventListener('click', function(){
   modal_delete.style.display = "none";
