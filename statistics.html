@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/statistics.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/4d534daa04.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
@@ -72,25 +73,122 @@
             </div>
 
             <div class="operator_list">
-                <div class="operator_emmaStone_content">
-                    <div class="operator_picture">
-                        <div class="operator_circle_out">
-                            <div class="operator_circle_center">
-                                <img src="/assert/picture/Admin/support_conversation_information_avatar_operator_woman_person-512.png"
-                                    alt="">
+                <div class="edit_new_delete_operator">
+                    <div class="new_delete_button">
+                        <div class="new_button">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="operator_edit_button">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                </div>
+                <div class="operator_list_content">
+                    <ul>
+                        <li>
+                            <div class="operator_emmaStone_content">
+                                <div class="edit_delete_btn">
+                                    <div class="edit_btn">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </div>
+                                    <div class="delete_btn">
+                                        <i class="far fa-trash-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="operator_emmaStone_picture">
+                                    <div class="operator_circle_out">
+                                        <div class="operator_circle_center">
+                                            <img src="/assert/picture/Admin/support_conversation_information_avatar_operator_woman_person-512.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="operator_inf">
+                                    <p id="op_name">Emma Stone</p>
+                                    <p id="op_position">Operator</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="operator_lucyStone_content">
+                                <div class="edit_delete_btn">
+                                    <div class="edit_btn">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </div>
+                                    <div class="delete_btn">
+                                        <i class="far fa-trash-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="operator_lucyStone_picture">
+                                    <div class="operator_circle_out">
+                                        <div class="operator_circle_center">
+                                            <img src="/assert/picture/Admin/support_conversation_information_avatar_operator_woman_person-512.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="operator_inf">
+                                    <p id="op_name">Lucy Stone</p>
+                                    <p id="op_position">Operator</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal">
+                <div class="modal_content">
+                    <span class="close_button">
+                        <i class="far fa-times-circle"></i>
+                    </span>
+                    <div class="settings_content">
+                        <div class="profil_picture">
+                            <a href="">
+                                <div id="defult_pciture">
+                                    <img src="assert/picture/icons/photo camera.svg" alt="">
+                                </div>
+                            </a>
+                            <div class="edit_button">
+                                <a href="">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content_info">
+                            <div class="content_info_input">
+                                <div class="name_surname">
+                                    <input type="text" placeholder="Ad/Soyad">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                                <div class="number">
+                                    <input type="number" placeholder="Nömrə">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                                <div class="username">
+                                    <input type="text" placeholder="İstifadəci adı">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                                <div class="password">
+                                    <input type="password" placeholder="Şifrə">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                            </div>
+                            <div class="chanel_save">
+                                <button id="chanel">Geri</button>
+                                <button id="save">Yadda saxla</button>
                             </div>
                         </div>
                     </div>
-                    <div class="operator_inf">
-                        <p id="op_name">Emma Stone</p>
-                        <p id="op_position">Operator</p>
-                    </div>
                 </div>
             </div>
-
+            <div class="modal_delete">
+                <div class="modal_delete_content">
+                    <button id="accept_btn">Təsdiq et</button>
+                    <button id="chanel_btn">Ləğv et</button>
+                </div>
+            </div>
         </div>
     </main>
     <script src="Js/date.js"></script>
+    <script src="/Js/modal.js"></script>
     <script src="Js/echarts.min.js"></script>
     <script src="/Js/statistic.js"></script>
     <script src="/Js/diogram.js"></script>

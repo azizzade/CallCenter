@@ -107,6 +107,17 @@
 
 .operator_status ul {
     display: flex;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.operator_status ul li {
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: Helvetica;
+    font-size: 16px;
 }
 
 .emma_stone .operator_img img {
@@ -139,8 +150,6 @@
     flex-direction: column;
     display: inline-block;
     text-align: center;
-    margin-left: 50px;
-    margin-top: 50px;
 }
 
 .operator_status_info #op_name {
@@ -179,6 +188,72 @@
     box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.3);
 }
 
+.edit_new_delete_operator {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    font-size: 16pt;
+}
+
+.new_delete_button {
+    display: flex;
+}
+
+.operator_edit_button {
+    cursor: pointer;
+}
+
+.operator_edit_button:hover {
+    color: #00B2BE;
+    transition: all 1s;
+}
+
+.new_button {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.new_button:hover {
+    color: #00B2BE;
+    transition: all 1s;
+}
+
+.edit_delete_btn {
+    display: flex;
+    font-size: 14pt;
+    margin-left: 10px;
+    height: 150px;
+    display: none;
+}
+
+.edit_btn {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+}
+
+.delete_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+}
+
+.edit_btn:hover {
+    background-color: green;
+    color: white;
+    transition: all 1s;
+}
+
+.delete_btn:hover {
+    color: white;
+    background-color: red;
+    transition: all 1s;
+}
+
 .operator_emmaStone_content {
     display: flex;
     align-items: center;
@@ -187,11 +262,16 @@
     height: 150px;
 }
 
-.operator_picture {
-    margin-left: 40px;
+.operator_lucyStone_content {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 44px;
+    height: 150px;
 }
 
-.operator_circle_out {
+
+.operator_emmaStone_content .operator_circle_out {
     width: 130px;
     height: 130px;
     border: solid 4px rgba(255, 255, 0, 0.5);
@@ -199,9 +279,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 40px;
 }
 
-.operator_circle_center {
+.operator_emmaStone_content .operator_circle_center {
     width: 115px;
     height: 115px;
     border: solid 3px rgba(255, 255, 0, 0.75);
@@ -211,9 +292,36 @@
     justify-content: center;
 }
 
-.operator_picture img {
+.operator_emmaStone_picture img {
     border-radius: 50%;
     border: solid yellow 2px;
+    max-width: 100px;
+}
+
+.operator_lucyStone_content .operator_circle_out {
+    width: 130px;
+    height: 130px;
+    border: solid 4px #8EE2E6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.operator_lucyStone_content .operator_circle_center {
+    width: 115px;
+    height: 115px;
+    border: solid 3px #5CD8DD;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.operator_lucyStone_picture img {
+    border-radius: 50%;
+    border: solid 2px #00C8CF;
     max-width: 100px;
 }
 
@@ -222,7 +330,7 @@
     align-items: center;
 }
 
-#op_name {
+.operator_inf #op_name {
     font-family: Helvetica;
 }
 
@@ -230,4 +338,183 @@
     margin-top: 5px;
     font-family: HelveticaLight;
     opacity: 0.5;
+}
+
+/*modal*/
+
+.modal {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.modal_content {
+    background: white;
+    margin: 35vh auto;
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 40px 40px;
+    width: 800px;
+    position: relative;
+}
+
+.close_button {
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+.settings_content {
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+}
+
+.profil_picture {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-color: #7A7A7A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.edit_button {
+    position: absolute;
+    bottom: -16px;
+}
+
+.edit_button a i {
+    background-color: white;
+    border: solid 2px #7A7A7A;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.edit_button a i:hover {
+    background-color: #f1f1f1;
+    border: solid 2px #d6d6d6;
+    transition: all 1s;
+}
+
+#defult_pciture {
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.content_info_input input {
+    border: none;
+    border-bottom: solid 1px;
+    margin-bottom: 20px;
+    font-size: 14pt;
+    opacity: 0.5;
+    width: 500px;
+    padding-bottom: 5px;
+    font-family: HelveticaLight;
+}
+
+.content_info_input i {
+    color: #06A108;
+}
+
+.chanel_save button {
+    height: 40px;
+    width: 90px;
+    border: none;
+    border-radius: 8px;
+    font-family: HelveticaMedium;
+}
+
+.chanel_save #chanel {
+    background-color: #FE2724;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.chanel_save #save {
+    color: white;
+    background-color: #06A108;
+    cursor: pointer;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+.modal_delete {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.modal_delete_content {
+    background: white;
+    margin: 35vh auto;
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 40px 40px;
+    width: 400px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.modal_delete_content button {
+    height: 40px;
+    width: 90px;
+    border: none;
+    border-radius: 8px;
+    font-family: HelveticaMedium;
+    color: white;
+    font-size: 12pt;
+}
+
+#accept_btn {
+    margin-right: 40px;
+    background-color: #06A108;
+    cursor: pointer;
+}
+
+#chanel_btn {
+    background-color: #FE2724;
+    cursor: pointer;
 }

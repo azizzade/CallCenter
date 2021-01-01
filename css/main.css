@@ -471,6 +471,8 @@
     opacity: 0.5;
 }
 
+/*modal*/
+
 .modal {
     position: absolute;
     z-index: 999;
