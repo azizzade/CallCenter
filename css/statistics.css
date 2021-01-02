@@ -114,6 +114,14 @@
 }
 
 
+/* #chart_line {
+    display: none;
+} */
+
+#diogram {
+    display: none;
+}
+
 .statistic_title button {
     border-radius: 20px;
     background-color: white;
