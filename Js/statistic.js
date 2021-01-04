@@ -2,7 +2,7 @@ let chart_line = document.getElementById("chart_line");
 
 let myChart = echarts.init(chart_line);
 
-let option = {
+option = {
     xAxis: {
         type: 'category',
         data: ['10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00']

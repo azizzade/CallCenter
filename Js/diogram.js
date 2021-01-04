@@ -2,7 +2,7 @@ let diogram = document.getElementById("diogram");
 
 let myDiogram = echarts.init(diogram);
 
-let option = {
+option = {
     
     tooltip: {
         trigger: 'axis',
