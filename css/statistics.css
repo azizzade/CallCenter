@@ -112,6 +112,12 @@
     height: auto;
     width: 100%;
 }
+.statistic_chart>div {
+    display: none;
+}
+.statistic_chart>div.active {
+    display: block;
+}
 
 
 /* #chart_line {

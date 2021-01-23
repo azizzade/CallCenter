@@ -10,15 +10,6 @@ play_icon.addEventListener("click", function(){
   }
 })
 
-// $(document).ready(function(){
-//   $("p").click(function(){
-//     $(this).hide();
-//   });
-
-//   $(".diogram_title").click(function(){
-
-//   })
-// });
 
 
 
