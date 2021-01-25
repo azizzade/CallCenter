@@ -13,12 +13,6 @@
     font-family: HelveticaRegular;
 }
 
-.date {
-    display: flex;
-    height: 90px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.20);
-}
-
 .content {
     display: flex;
     align-items: center;
@@ -102,6 +96,16 @@
     margin-right: 5px;
     font-size: 14px;
     margin-right: 10px;
+}
+
+.date_input #search {
+    border: none;
+    background-color:white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    color:black;
+    padding: 5px 25px;
+    border-radius: 15px;
+    font-family: HelveticaMedium;
 }
 
 .statistic_title {
