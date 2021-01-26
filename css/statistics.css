@@ -75,6 +75,10 @@
     max-width: 60px;
 }
 
+.admin_sign_out img {
+    max-width: 60px;
+}
+
 .active {
     width: 50px;
     height: 50px;
@@ -86,6 +90,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.date_input {
+    display: flex;
+    align-items: center;
+    font-family:HelveticaLight ;
 }
 
 .date_input input {

@@ -80,6 +80,10 @@
     max-width: 60px;
 }
 
+.admin_sign_out img {
+    max-width: 60px;
+}
+
 .active {
     width: 50px;
     height: 50px;
@@ -105,13 +109,19 @@
     right: 40px;
 }
 
+.search_style{
+    display: flex;
+    align-items: center;
+    font-family: HelveticaLight;
+}
+
 .search_style input {
     border: none;
     border-bottom: solid 1px rgba(0, 0, 0, 0.5);
     padding: 5px 15px;
     font-family: HelveticaLightThin;
     font-size: 12px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .search_style #search {
@@ -121,7 +131,8 @@
     color:black;
     padding: 10px 20px;
     border-radius: 15px;
-    font-family: HelveticaMedium;
+    font-family: HelveticaLight;
+    cursor: pointer;
 }
 
 .search_style {
@@ -551,3 +562,49 @@ a:active {
     cursor: pointer;
 }
 
+.sign_out_modal {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+}
+
+.sign_out_modal_content {
+    background: white;
+    margin: 35vh auto;
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 40px 40px;
+    width: 400px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.sign_out_modal_content button {
+    height: 40px;
+    width: 90px;
+    border: none;
+    border-radius: 8px;
+    font-family: HelveticaMedium;
+    color: white;
+    font-size: 12pt;
+}
+
+#sign_out_accept {
+    margin-right: 40px;
+    background-color: #06A108;
+    cursor: pointer;   
+}
+
+#sign_out_chanel {
+    background-color: #FE2724;
+    cursor: pointer;
+}

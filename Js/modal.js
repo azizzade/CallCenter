@@ -2,7 +2,6 @@ let new_operator_btn = document.querySelector(".new_button");
 let close_btn = document.querySelector(".close_button");
 let modal = document.querySelector(".modal");
 
-
 new_operator_btn.addEventListener("click", function() {
     modal.style.display = "block";
 });
@@ -15,7 +14,7 @@ window.addEventListener("click", function() {
     if(event.target == modal){
         modal.style.display = 'none';
     }
-})
+});
 
 
 let operator_edit_button = document.querySelector(".operator_edit_button");
@@ -32,7 +31,7 @@ operator_edit_button.addEventListener('click', function() {
     element.style.display = "none";
   }
   }
-})
+});
 
 let delete_btn = document.querySelectorAll(".delete_btn");
 let modal_delete = document.querySelector(".modal_delete");
@@ -46,4 +45,11 @@ for (let index = 0; index < delete_btn.length; index++) {
 
 chanel_btn.addEventListener('click', function(){
   modal_delete.style.display = "none";
-})
+});
+
+let admin_sign_out = document.querySelector(".admin_sign_out");
+let sign_out_modal = document.querySelector(".sign_out_modal");
+
+admin_sign_out.addEventListener("click", function() {
+  sign_out_modal.style.display = "block";
+});
