@@ -9,11 +9,6 @@ play_icon.addEventListener("click", function(){
   }
 })
 
-let operator_edit_button = document.querySelector(".operator_edit_button");
- operator_edit_button.addEventListener("click", function(){
-   list_content = document.querySelector(".operator_list_content");
-   list_content.classList.toggle("active-edit");
- });
 
 
 

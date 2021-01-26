@@ -45,3 +45,11 @@ sign_out_chanel.addEventListener("click", function() {
   sign_out_modal.style.display = "none";
 })
 
+let operator_edit_button = document.querySelector(".operator_edit_button");
+
+ operator_edit_button.addEventListener("click", function(){
+   list_content = document.querySelector(".operator_list_content");
+   list_content.classList.toggle("active-edit");
+ });
+
+
