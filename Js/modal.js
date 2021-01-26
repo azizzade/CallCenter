@@ -17,21 +17,6 @@ window.addEventListener("click", function() {
 });
 
 
-let operator_edit_button = document.querySelector(".operator_edit_button");
-let edit_delete_btn = document.querySelectorAll(".edit_delete_btn");
-
-operator_edit_button.addEventListener('click', function() {
-
-  for (let index = 0; index < edit_delete_btn.length; index++) {
-   let element = edit_delete_btn[index];
-   if (element.style.display == "none"){
-    element.style.display = "block";
-    element.style.display = "flex";
-  }else {
-    element.style.display = "none";
-  }
-  }
-});
 
 let delete_btn = document.querySelectorAll(".delete_btn");
 let modal_delete = document.querySelector(".modal_delete");
@@ -49,7 +34,14 @@ chanel_btn.addEventListener('click', function(){
 
 let admin_sign_out = document.querySelector(".admin_sign_out");
 let sign_out_modal = document.querySelector(".sign_out_modal");
+let sign_out_chanel = document.querySelector(".sign_out_modal");
+
 
 admin_sign_out.addEventListener("click", function() {
   sign_out_modal.style.display = "block";
 });
+
+sign_out_chanel.addEventListener("click", function() {
+  sign_out_modal.style.display = "none";
+})
+

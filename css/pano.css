@@ -217,7 +217,7 @@
     font-size: 14pt;
     margin-left: 10px;
     height: 150px;
-    display: none;
+    align-items: center;
 }
 
 .edit_btn {
@@ -226,6 +226,7 @@
     align-items: center;
     justify-content: center;
     width: 30px;
+    height: 100px;
 }
 
 .delete_btn {
@@ -233,6 +234,7 @@
     align-items: center;
     justify-content: center;
     width: 30px;
+    height: 100px;
 }
 
 .edit_btn:hover {
@@ -510,4 +512,8 @@ a:active {
 #chanel_btn {
     background-color: #FE2724;
     cursor: pointer;
+}
+
+.operator_list_content.active-edit .edit_delete_btn {
+    display: flex;
 }

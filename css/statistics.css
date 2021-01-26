@@ -20,10 +20,6 @@
     font-family: Helvetica;
 }
 
-.today {
-    margin-right: 50px;
-}
-
 .admin_content_list {
     display: flex;
 }
@@ -215,6 +211,7 @@ a:active {
     margin-left: 10px;
     height: 150px;
     display: none;
+    align-items: center;
 }
 
 .edit_btn {
@@ -223,6 +220,7 @@ a:active {
     align-items: center;
     justify-content: center;
     width: 30px;
+    height: 100px;
 }
 
 .delete_btn {
@@ -230,6 +228,7 @@ a:active {
     align-items: center;
     justify-content: center;
     width: 30px;
+    height: 100px;
 }
 
 .edit_btn:hover {
@@ -507,4 +506,55 @@ a:active {
 #chanel_btn {
     background-color: #FE2724;
     cursor: pointer;
+}
+
+.sign_out_modal {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+}
+
+.sign_out_modal_content {
+    background: white;
+    margin: 35vh auto;
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 40px 40px;
+    width: 400px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.sign_out_modal_content button {
+    height: 40px;
+    width: 90px;
+    border: none;
+    border-radius: 8px;
+    font-family: HelveticaMedium;
+    color: white;
+    font-size: 12pt;
+}
+
+#sign_out_accept {
+    margin-right: 40px;
+    background-color: #06A108;
+    cursor: pointer;   
+}
+
+#sign_out_chanel {
+    background-color: #FE2724;
+    cursor: pointer;
+}
+
+.operator_list_content.active-edit .edit_delete_btn {
+    display: flex;
 }

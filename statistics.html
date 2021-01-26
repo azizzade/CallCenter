@@ -12,16 +12,6 @@
 </head>
 
 <body>
-    <header>
-        <div class="date">
-            <div class="content">
-                <div class="today">
-                    <h1>Today:</h1>
-                </div>
-                <div id="output"></div>
-            </div>
-        </div>
-    </header>
     <main>
         <div class="admin_content_list">
             <div class="admin_menu">
@@ -30,27 +20,32 @@
                         <img src="/assert/picture/Admin/5e8b577fb511b-bpfull.png" alt="">
                     </div>
                     <div class="admin_menu_list">
-                        <a href="">
+                        <a href="#">
                             <div class="list admin_menu_list_style active">
                                 <img src="/assert/picture/icons/List.svg" alt="">
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <div class="statistic admin_menu_list_style">
                                 <img src="/assert/picture/icons/statistic.svg" alt="">
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <div class="pano admin_menu_list_style">
                                 <img src="/assert/picture/icons/pano.svg" alt="">
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <div class="admin_settings admin_menu_list_style">
                                 <img src="/assert/picture/icons/settings.svg" alt="">
                             </div>
                         </a>
-                        <a href="">
+                        <a href="#">
+                            <div class="admin_sign_out admin_menu_list_style">
+                                <img src="/assert/picture/icons/SignOut-01.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
                             <div class="admin_sign_out admin_menu_list_style">
                                 <img src="/assert/picture/icons/SignOut-01.svg" alt="">
                             </div>
@@ -196,10 +191,16 @@
                     <button id="chanel_btn">Ləğv et</button>
                 </div>
             </div>
+            <div class="sign_out_modal">
+                <div class="sign_out_modal_content">
+                    <button id="sign_out_accept">Sign out</button>
+                    <button id="sign_out_chanel">Chanel</button>
+                </div>
+            </div>
         </div>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="Js/modal.js"></script>
+    <script src="Js/script.js"></script>
     <script src="Js/echarts.min.js"></script>
     <script src="Js/diogram.js"></script>
 </body>

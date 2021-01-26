@@ -35,6 +35,8 @@ var option1 = {
 };
 
 // ----
+
+
 let chart_line = document.getElementById("chart_line");
 
 let myChart = echarts.init(chart_line);
